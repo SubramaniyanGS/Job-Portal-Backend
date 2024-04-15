@@ -32,8 +32,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve static files from the 'static' directory
-app.use('https://job-portal-backend-u0t7.onrender.com/static/uploads', express.static(path.join(__dirname, 'uploads')));
-app.use('https://job-portal-backend-u0t7.onrender.com/static/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/static/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/static/assets', express.static(path.join(__dirname, 'assets')));
 
 
 app.use(express.json());
